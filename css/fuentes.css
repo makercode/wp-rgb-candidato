@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway Regular'), local('Raleway-Regular'), url('../fuentes/raleway.woff') format('woff'), url('../fuentes/raleway.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Raleway-l';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway Light'), local('Raleway-Light'), url('../fuentes/ralewayl.woff') format('woff'), url('../fuentes/ralewayl.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Raleway-b';
+  font-style: normal;
+  src: local('Raleway Bold'), local('Raleway-Bold'), url('../fuentes/ralewayb.woff') format('woff'), url('../fuentes/ralewayb.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/N5Lbe1fynPA1KT8BFvAiGw.woff2) format('woff2'), url(https://fonts.gstatic.com/s/roboto/v15/grlryt2bdKIyfMSOhzd1eA.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsFdJ_1rrj2ZjOK53P0BoXuI.woff2) format('woff2'), url(https://fonts.gstatic.com/s/robotocondensed/v13/Zd2E9abXLFGSr9G3YK2MsO3ikv6SQm_yYbVf3nddkGw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/El-bgsteBznJNL5pgUfFLA.woff2) format('woff2'), url(https://fonts.gstatic.com/s/roboto/v15/d-QWLnp4didxos_6urzFtg.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/Op9nD2u96-RO01_6Io91EA.woff2) format('woff2');
+}

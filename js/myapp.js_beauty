@@ -1,0 +1,435 @@
+//________________________________________________________________________________________________//
+//------------------------------------ [ irviN App ] -------------------------------------//
+
+$( document ).ready(function() {
+
+    //-------------- [Scroll] --------------//
+    var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome/') > -1;
+    var is_firefox = navigator.userAgent.toLowerCase().indexOf('firefox/') > -1;
+    var is_safari = navigator.userAgent.toLowerCase().indexOf('safari/') > -1;
+    var is_opera = navigator.userAgent.toLowerCase().indexOf('opera/') > -1;
+    var is_ie = navigator.userAgent.toLowerCase().indexOf('msie') > -1;
+    var isMobile = {
+        Android: function () {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function () {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function () {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function () {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function () {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function () {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+    if (isMobile.any()) {
+    } else {
+    //     /* NiceScroll proys */
+    // $("body").niceScroll({
+    //     touchbehavior:false,
+    //     cursorcolor:"#fab616",
+    //     cursoropacitymax:1,
+    //     cursorborder:"0px solid #fab616",
+    //     cursorwidth:13,
+    //     cursorborderradius:"5px",
+    //     zindex:9999
+    //    });
+    //     switch (true) {
+    //         case (is_chrome):
+    //             break;
+    //         case (is_firefox):
+    //             break;
+    //         case (is_safari):
+    //             break;
+    //         case (is_opera):
+    //             break;
+    //         default:
+    //             $('body').addClass('iexplorer');
+    //             break;
+    //     }
+    }
+    //-------------- [Fin Scroll] --------------//
+
+    //-------------- [ Menu ] --------------//
+    $("#menu" ).on( "click", function() {
+        $("#menu-list").find("a").removeClass("mli-active2");
+        $("#menu-list").find(".menu-listsub").removeClass("menu-listsub-active");
+        $("#menu-list").toggleClass('menu-list-active');
+        $("#menu").toggleClass('menu-active');
+    });
+
+    $("#menu-list" ).on( "click","a", function() {
+        $("#menu-list").find("a").removeClass("mli-active").addClass("mli-active2");
+        $("#menu-list").find(".menu-listsub").removeClass("menu-listsub-active");
+        $(".menu-listsub").find("a").removeClass();
+        $(this).addClass("mli-active");
+        $(this).siblings("#menu-list").find("a").removeClass();
+        $(this).siblings(".menu-listsub").addClass("menu-listsub-active");
+    });
+    //-------------- [ Fin - Menu ] --------------//
+
+    //-------------- [ Skrollr Head] --------------//
+    if (jQuery(window).width() > 992) {
+        skrollr.init({forceHeight:!1})
+    }
+    //-------------- [ FIN - Skrollr Head ] --------------//
+
+    //-------------- [ MenuTop ] --------------//
+    // $(window).scroll(function(){
+
+    //   if ( $(this).scrollTop() > 0 ){
+    //     //$('.cont-menu').addClass('cont-menu2');
+    //   } else {
+    //     //$('.cont-menu').removeClass('cont-menu2');
+    //   }
+
+    // });
+    //-------------- [ Fin MenuTop ] --------------//
+
+
+    //-------------- [ Wow ] --------------//
+    var wow = new WOW(
+      {
+        boxClass:     'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset:       0,          // distance to the element when triggering the animation (default is 0)
+        mobile:       true,       // trigger animations on mobile devices (default is true)
+        live:         true,       // act on asynchronously loaded content (default is true)
+        callback:     function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      }
+    );
+    wow.init();
+    //-------------- [ Fin - Wow ] --------------//
+
+
+    //-------------- [ Carusel  ] --------------//
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 1500,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: false,
+                nav: false
+            },
+            600: {
+                items: 2,
+                dots: false,
+                nav: false
+            },
+            960: {
+                items: 3,
+                dots: false,
+                nav: true
+            },
+            1200: {
+                items: 4,
+                dots: false,
+                nav: true,
+            }
+        }
+    });
+    //-------------- [ Fin Carusel  ] --------------//
+
+    //-------------- [ Carusel con animacion ] --------------//
+    var owl = $('.slider-alar');
+    owl.owlCarousel({
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        items: 1,
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        lazyLoad: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: false,
+        smartSpeed:0,
+        responsive: {
+            0: {
+                items: 1,
+                dots: false,
+                nav: false
+            },
+            600: {
+                items: 1,
+                dots: false,
+                nav: true
+            }
+        }
+    });
+    //-------------- [ Carusel con animacion ] --------------//
+
+    //-------------- [ Carusel Testimonial ] --------------//
+    var owl = $('.test-carrusel');
+    owl.owlCarousel({
+        animateOut: 'fadeOutDown',
+        animateIn: 'fadeIn',
+        items: 1,
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        lazyLoad: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+        smartSpeed:450,
+        responsive: {
+            0: {
+                items: 1,
+                dots: false,
+                nav: false
+            },
+            600: {
+                items: 1,
+                dots: false,
+                nav: true
+            }
+        }
+    });
+    //-------------- [ Carusel Testimonial ] --------------//
+
+
+
+    //-------------- [ Validator ] --------------//
+      $("#ok").hide();
+
+      function smallmove(){
+        var $small = $('.input--minoru');
+        for (var a=0; a < $small.length; a++){
+          $small.eq(a).find('.wpcf7-form-control-wrap').before($small.eq(a).find('.input__field--yoko'));
+        }
+      }
+
+      $('#wpcf7-f7-o1').find('form').addClass('fcontact');
+      $(".fcontact").validate({
+          rules: {
+            nombre: { required: true, minlength: 2},
+            email: { required: true, email: true},
+            pais: { required: true,minlength: 2},
+            cmensaje: { required:true, minlength: 2}
+          },
+          messages: {
+            nombre: "Campo invalido",
+            email: "Campo invalido",
+            pais: "Campo invalido",
+            cmensaje: "Campo invalido",
+          },
+          invalidHandler: function(event){
+            setTimeout(function(){
+                smallmove();
+            },10);
+          }
+      });
+      
+      $('.fsuscripcion').find('form').addClass('fsuscrip');
+      $(".fsuscrip").validate({
+          rules: {
+            nscorreo: { required: true, email: true},
+          },
+          messages: {
+            nscorreo: "Campo invalido"
+          },
+          invalidHandler: function(event){
+            setTimeout(function(){
+                smallmove();
+            },10);
+          }
+      });
+
+      var $inputxd = $('.input--minoru');
+      for (var a=0; a < $inputxd.length; a++){
+         $inputxd.eq(a).find('.wpcf7-form-control-wrap').before($inputxd.eq(a).find('.input__field--yoko'));
+      }
+
+    //-------------- [ FIN Validator ] --------------//
+
+    //-------------- [ Boton responsivo Categorias ] --------------//
+    $('#cat-btn').on('click',function(){
+    $('.preg-cat').toggle("slow");
+    });
+    //-------------- [ FIN Boton responsivo Categorias ] --------------//
+
+    // //-------------- [ Efecto de secciones ] --------------//
+    // $('a[href*=#]').click(function () {
+    //     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    //             && location.hostname == this.hostname) {
+    //         var $target = $(this.hash);
+    //         $target = $target.length && $target
+    //                 || $('[name=' + this.hash.slice(1) + ']');
+    //         if ($target.length) {
+    //             var targetOffset = $target.offset().top;
+    //             $('html,body')
+    //                     .stop().animate({scrollTop: targetOffset}, 1300, 'easeInCubic');
+    //             return false;
+    //         }
+    //     }
+    // });
+    // //-------------- [ FIN Efecto de secciones ] --------------//
+
+    // // [ Acomodar menu ] <-----------------------------------//
+    // $("a").on("click",function(){
+    //    if(this.hash){
+    //       //console.log($(this).attr('href'));
+    //       $("html body").animate({"scrollTop":$($(this).attr('href')).offset().top-50},1400);
+    //       return false;
+    //          }
+    // });
+    // // [ Fin - Acomodar menu ] <-----------------------------------//
+
+    //-------------- [ Plugin de height ] --------------//
+    equalheight = function(container){
+
+    var currentTallest = 0,
+         currentRowStart = 0,
+         rowDivs = new Array(),
+         $el,
+         topPosition = 0;
+     $(container).each(function() {
+
+       $el = $(this);
+       $($el).height('auto')
+       topPostion = $el.position().top;
+
+       if (currentRowStart != topPostion) {
+         for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+           rowDivs[currentDiv].height(currentTallest);
+         }
+         rowDivs.length = 0; // empty the array
+         currentRowStart = topPostion;
+         currentTallest = $el.height();
+         rowDivs.push($el);
+       } else {
+         rowDivs.push($el);
+         currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+      }
+       for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+         rowDivs[currentDiv].height(currentTallest);
+       }
+     });
+    }
+    $(window).load(function() {
+      equalheight('.clie-carrusel .clie-item');
+      equalheight('.car-titulo');
+      equalheight('.preg-preglist');
+      equalheight('.inscrip-item p');
+      equalheight('.vacante-list');
+
+    });
+
+    if (jQuery(window).width() > 750) {
+      $(window).load(function() {
+        equalheight('.benef-titulo');
+      });
+    }
+
+    //-------------- [ FIN - Plugin de height ] --------------//
+
+    //-------------- [ Materialize ] --------------//
+    $('.collapsible').collapsible({
+      accordion : true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+    $('.collapsible2').collapsible({
+      accordion : true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+      $('.select-u').material_select();
+    //-------------- [ FIN - Materialize ] --------------//
+
+    //-------------- [ Tabulador de contacto ] --------------//
+    $("#contacto-tab").on("click","a",function(){
+    $("#contacto-tab").find("a").removeClass("active-2");
+    $(this).parent().next().find("a").addClass("active-2");
+    });
+    //-------------- [ FIN - Tabulador de contacto ] --------------//
+
+});
+
+
+/*!
+ * classie - class helper functions
+ **/
+
+( function( window ) {
+
+'use strict';
+
+// class helper functions from bonzo https://github.com/ded/bonzo
+
+function classReg( className ) {
+  return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+}
+
+// classList support for class management
+// altho to be fair, the api sucks because it won't accept multiple classes at once
+var hasClass, addClass, removeClass;
+
+if ( 'classList' in document.documentElement ) {
+  hasClass = function( elem, c ) {
+    return elem.classList.contains( c );
+  };
+  addClass = function( elem, c ) {
+    elem.classList.add( c );
+  };
+  removeClass = function( elem, c ) {
+    elem.classList.remove( c );
+  };
+}
+else {
+  hasClass = function( elem, c ) {
+    return classReg( c ).test( elem.className );
+  };
+  addClass = function( elem, c ) {
+    if ( !hasClass( elem, c ) ) {
+      elem.className = elem.className + ' ' + c;
+    }
+  };
+  removeClass = function( elem, c ) {
+    elem.className = elem.className.replace( classReg( c ), ' ' );
+  };
+}
+
+function toggleClass( elem, c ) {
+  var fn = hasClass( elem, c ) ? removeClass : addClass;
+  fn( elem, c );
+}
+
+var classie = {
+  // full names
+  hasClass: hasClass,
+  addClass: addClass,
+  removeClass: removeClass,
+  toggleClass: toggleClass,
+  // short names
+  has: hasClass,
+  add: addClass,
+  remove: removeClass,
+  toggle: toggleClass
+};
+
+// transport
+if ( typeof define === 'function' && define.amd ) {
+  // AMD
+  define( classie );
+} else {
+  // browser global
+  window.classie = classie;
+}
+
+})( window );
+
+//--------------------------------- [ irviNApp - FIN ] ---------------------------------//
+//______________________________________________________________________________________//

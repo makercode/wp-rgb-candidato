@@ -1,0 +1,1491 @@
+//_________________________________________________________________________/
+//________________________________________________________________________/
+//---------------------------- [ ESTILOS ] ------------------------------/
+@import 'nib'
+
+vendor-prefixes = webkit moz ms o official
+scale = 0 480px 768px 992px 1200px
+
+
+body
+	background url('../img/plantilla/textura.jpg') 
+	padding 0px
+	margin 0px
+	text-align center
+	color azula
+ 	font-family fuente1,serif
+ 	position relative
+
+
+// ----------------- [ Logo ] --------------- //
+.logo
+	width 120px
+	height auto
+	bloque ()
+	img
+		width 100%
+		height auto
+
+
+// ----------------- [ Linea Grafica ] --------------- //
+
+.lg-cont-titulo
+	tam ()
+	padding 60px 30px 60px 30px
+	background blancoa
+
+h1
+	font 40px fuente1
+	
+h2
+	font 35px fuente1
+	line-height 120%
+h3
+	font 30px fuente1
+h4
+h5
+h6
+	font 24px fuente1
+p
+	font 18px fuente1
+
+img
+	width 100%
+	height auto
+	bloque ()
+
+.a-link
+	a
+		font-family fuente1
+		&:hover
+			text-shadow 0.3px 0.3px 0px azula,-0.3px -0.3px 0px azula,0.3px -0.3px 0px azula,-0.3px 0.3px 0px azula
+
+.titulo-primario
+	tam ()
+	padding 0px 0px 0px 0px
+	position relative
+	text-align left
+	h1
+	h2
+	h3
+	h4
+	h5
+	h6
+		font 40px fuente1
+		line-height 120%
+		padding 0px 0px 20px 0px
+		color blancoa
+		text-align left !important
+		bloque ()
+		width auto
+		position relative
+		font-weight bold
+		margin 0px 0px 15px 0px
+		&:before
+			content ''
+			bottom 0px
+			left 1px
+			width 100%
+			height 4px
+			position absolute
+			background url('../img/plantilla/linea_titulo_general.png')
+			background-repeat no-repeat
+			background-size 100% 100%
+	p
+		font 25px fuente1
+		color blancoa
+		text-align left
+	.btn-ico
+		margin 30px 0px 0px 0px
+
+.titulo-cont1
+.titulo-cont2
+.titulo-cont3
+.titulo-cont4
+	tam ()
+	padding 0px 0px 0px 30px
+	position relative
+	h1
+	h2
+	h3
+	h4
+	h5
+	h6
+		font 40px fuente1
+		line-height 120%
+		padding 0px 0px 14px 0px
+		color azula
+		text-align left
+		bloque ()
+		width 100%
+		position relative
+		margin-bottom 25px
+		&:before
+			content ''
+			bottom 0px
+			left 1px
+			width 100%
+			height 4px
+			position absolute
+			background url('../img/plantilla/linea_titulo_general.png')
+			background-repeat no-repeat
+			background-size 100% 100%
+	p
+		font 25px fuente1
+		color azula
+		text-align left
+	&:before
+		content ''
+		top 15px
+		left 0px
+		position absolute
+		width 20px
+		height 100%
+		background url('../img/plantilla/bullet_titulo_2.svg') center top
+		background-size 20px
+		background-repeat no-repeat
+		
+.titulo-cont2
+	h1
+	h2
+	h3
+	h4
+	h5
+	h6
+		font 35px fuente1
+		line-height 52px
+	p
+		font 20px fuente1
+	&:before
+		content ''
+		top 15px
+		
+.titulo-cont3
+	h1
+	h2
+	h3
+	h4
+	h5
+	h6
+		font 30px fuente1
+	p
+		font 18px fuente1
+	&:before
+		content ''
+		top 7px
+
+.titulo-cont4
+	h1
+	h2
+	h3
+	h4
+	h5
+	h6
+		font 25px fuente1
+	p
+		font 16px fuente1
+	&:before
+		content ''
+		top 7px
+
+
+// ---> [ Desktop ]
+//@media screen and (max-width: 1200px)
+
+// ---> [ Tablet ]
+//@media screen and (max-width: 992px)
+
+// ---> [ Mobil ]
+@media screen and (max-width: 600px)
+	.titulo-primario
+		tam ()
+		h1
+		h2
+		h3
+		h4
+		h5
+		h6
+			font 30px fuente1
+		p
+			font 20px fuente1
+			color blancoa
+			text-align left
+		.btn-ico
+			margin 30px 0px 0px 0px
+
+	.titulo-cont1
+	.titulo-cont2
+	.titulo-cont3
+	.titulo-cont4
+		h1
+		h2
+		h3
+		h4
+		h5
+		h6
+			font 25px fuente1
+		&:before
+			top 7px
+
+
+
+// ----------------- [ Titulos ] --------------- //
+.titulos-cont-1
+	tam ()
+	h1
+		font 40px fuente1
+		color azula
+	h2
+		font 25px fuente1
+		color azula
+		
+.titulos-cont-2
+	width 100%
+	height auto
+	bloque ()
+	h2
+		font 35px fuente1
+		color azula
+	h3
+		font 20px fuente1
+		color azula
+		
+.titulos-cont-3
+	tam ()
+	h3
+		font 30px fuente1
+		color azula
+	h4
+		font 18px fuente1
+		color azula
+
+// ----------------- [ Parrafo ] --------------- //
+.camp-txt
+	tam ()
+	text-align left
+	h1
+	h2
+	h3
+	h4
+	h5
+	h6
+		font 25px fuente1
+		color azula
+		padding 0px 0px 5px 0px
+	p
+		font 16px fuente1
+		color azula
+		line-height 25px
+	a
+		trancicion ()
+		&:hover
+			text-shadow 0.2px 0.2px 0px azula,-0.2px -0.2px 0px azula,0.2px -0.2px 0px azula,-0.2px 0.2px 0px azula
+	strong
+		font-weight bold
+	ul
+		padding 10px 0px 10px 0px
+		li
+			font 16px fuente1
+			color azula
+			padding 0px 0px 5px 32px
+			line-height 22px
+			position relative
+			margin-bottom 7px
+			&:before
+				content ''
+				position absolute
+				width 20px
+				height 20px
+				left 3px
+				top 2px
+				background url('../img/plantilla/check_circulo-amarillo.svg') center
+				background-repeat no-repeat
+				background-size 100%
+	ol
+		padding 0px 0px 0px 0px
+		li
+			font 16px fuente1
+			color azula
+			padding 0px 0px 5px 32px
+			line-height 22px
+			position relative
+			counter-increment my-awesome-counter
+			&:before
+				content ''
+				position absolute
+				width 22px
+				height 22px
+				left 8px
+				top -2px
+				font-size 20px
+				font-weight bold
+				color amarilloa
+				content counter(my-awesome-counter,decimal) "."
+	img
+		tam ()
+		margin 13px 0px 13px 0px
+		width 95%
+	table
+		width 100%
+		thead
+			background azula
+			height auto
+			th
+				font 18px fuente1
+				color amarilloa
+				font-weight bold
+				text-align center
+				vertical-align middle
+				height 60px
+				border 1px solid blancoa
+				padding 0px 10px 0px 10px
+		tbody
+			tr
+				td
+					border 1px solid blancoa
+					text-align center
+					background rgba(0,0,0,.1)
+					font 18px fuente1
+					color azula
+					font-weight bold
+					height 110px
+					vertical-align middle
+				&:first-child
+					background azula
+					height auto
+					td
+						font 18px fuente1
+						color amarilloa !important
+						font-weight bold
+						text-align center
+						vertical-align middle
+						height 60px
+						border 1px solid blancoa
+						padding 0px 10px 0px 10px
+						h1
+						h2
+						h3
+						h4
+						h5
+						h6
+						p
+						span
+						strong
+							color amarilloa !important
+					
+						
+
+// ----------------- [ Breadcrum ] --------------- //
+.breadcont
+	padding-top 25px
+	bloque ()
+	.row
+		margin-bottom 0px !important
+	
+.breadcrum
+	tam ()
+	text-align left
+	border-bottom 1px solid #babdce
+	padding 0px 10px 6px 20px
+	position relative
+	margin 0px 0px 0px 0px
+	&:before
+		position absolute
+		top 6px
+		left 0px
+		content ''
+		background url('../img/plantilla/bullet_titulo_2.svg') center left
+		background-repeat no-repeat
+		background-size 12px
+		width 15px
+		height 20px
+	li
+		bloque ()
+		height auto
+		width auto
+		a
+			bloque ()
+			width auto
+			height auto
+			padding 0px 0px 0px 0px
+			font 19px fuente1
+			color azula
+			line-height 30px
+			trancicion ()
+			&:after
+				content '/'
+				color amarilloa
+				padding 0px 5px 0px 10px
+				font-weight bold
+				text-shadow none
+			&:hover
+				text-shadow 0.2px 0.2px 0px azula,-0.2px -0.2px 0px azula,0.2px -0.2px 0px azula,-0.2px 0.2px 0px azula
+				&:after
+					text-shadow none
+		&:last-child
+			a
+				font-weight bold
+				position relative
+				padding-right 30px
+				cursor default
+				&:after
+					content ''
+					width 30px
+					height 30px
+					position absolute
+					right 0px
+					top 0px
+					background url('../img/plantilla/flecha-amarillo-migaja.svg') center
+					background-size 10px
+					background-repeat no-repeat
+				&:hover
+					text-shadow none
+
+// ---> [ Desktop ]
+//@media screen and (max-width: 1200px)
+
+// ---> [ Tablet ]
+//@media screen and (max-width: 992px)
+
+// ---> [ Mobil ]
+@media screen and (max-width: 600px)
+	.breadcrum
+		display none
+
+	
+// ----------------- [ Botones ] --------------- //
+
+.lg-cont-btn
+	tam ()
+	padding 60px 30px 60px 30px
+	background azula
+
+.btn-ico
+	padding 10px 0px 10px 20px
+	background amarilloa
+	font 20px fuente1
+	line-height 40px
+	color azula
+	border-radius 7px
+	box-shadow 0 0px 0px amarilloa2, 0 7px 0 amarilloa2, 0px 9px 10px rgba(255,255,255,0.0), inset 0px 2px 9px rgba(255,255,255,0.0)
+	display inline-block
+	position relative
+	trancicion ()
+	border 0px solid blancoa
+	&:after
+		content ''
+		width 60px
+		height 40px
+		border-left 1px solid rgba(255,255,255,.30)
+		vertical-align middle
+		margin 0px 0px 0px 20px
+		text-align center
+		float right
+		position relative
+		box-shadow -1px 0px 0px 0px rgba(0,0,0,.1)
+		background url('../img/plantilla/icono_boton_banner.svg') center
+		background-repeat no-repeat
+		background-size 40px
+	&:hover
+		transform scale(1.03,1.03)
+	&:active
+	&:focus
+		background amarilloa
+		top 3px
+		box-shadow 0 4px 0 amarilloa2, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2)
+		
+.btn-ico-img
+	padding 10px 0px 10px 20px
+	background amarilloa
+	font 20px fuente1
+	line-height 40px
+	font-weight 900
+	color azula
+	border-radius 7px
+	box-shadow 0 0px 0px amarilloa2, 0 7px 0 amarilloa2, 0px 9px 10px rgba(255,255,255,0.0), inset 0px 2px 9px rgba(255,255,255,0.0)
+	display inline-block
+	position relative
+	trancicion ()
+	i
+		width 60px
+		height 40px
+		border-left 1px solid rgba(255,255,255,.25)
+		bloque ()
+		vertical-align middle
+		margin 0px 5px 0px 20px
+		text-align center
+		float right
+		position relative
+		&:before
+			content ''
+			position absolute
+			top 0px
+			left -2px
+			width 1px
+			height 100%
+			background rgba(0,0,0,.1)
+		img 
+			width 40px
+			height auto
+			bloque ()
+			vertical-align middle
+	&:hover
+		transform scale(1.03,1.03)
+	&:active
+	&:focus
+		top 3px
+		box-shadow 0 4px 0 amarilloa2, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2)
+		
+.btn-header
+	width auto
+	height auto
+	bloque ()
+	border 1px solid amarilloa
+	padding 10px 12px 10px 12px
+	font 18px fuente1
+	font-weight bold
+	color blancoa
+	&:hover
+	&:focus
+	&:active
+		background amarilloa
+		color azula
+
+.btn-follow
+	width 70px
+	height 70px
+	padding 0px
+	background amarilloa
+	color azula
+	border-radius 7px
+	box-shadow 0 0px 0px amarilloa2, 0 7px 0 amarilloa2, 0px 9px 10px rgba(255,255,255,0.0), inset 0px 2px 9px rgba(255,255,255,0.0)
+	display inline-block
+	position relative
+	trancicion ()
+	bloque ()
+	img
+		width 30px
+		height auto
+		vertical-align middle
+		line-height 70px
+		bloque ()
+	&:hover
+		transform scale(1.03,1.03)
+	&:active
+	&:focus
+		top 3px
+		box-shadow 0 4px 0 amarilloa2, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2)
+
+.btn-txt
+	padding 10px 20px 10px 20px
+	background amarilloa
+	font 20px fuente1
+	line-height 40px
+	font-weight 900
+	color azula
+	border-radius 7px
+	box-shadow 0 0px 0px amarilloa2, 0 7px 0 amarilloa2, 0px 9px 10px rgba(255,255,255,0.0), inset 0px 2px 9px rgba(255,255,255,0.0)
+	display inline-block
+	position relative
+	trancicion ()
+	&:hover
+		transform scale(1.03,1.03)
+	&:active
+	&:focus
+		top 3px
+		box-shadow 0 4px 0 amarilloa2, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2)
+
+.btn-arrow
+.btn-arrow-mini
+	padding 10px 45px 10px 20px
+	background amarilloa
+	font 20px fuente1
+	line-height 40px
+	font-weight 900
+	color azula
+	border-radius 7px
+	box-shadow 0 0px 0px amarilloa2, 0 7px 0 amarilloa2, 0px 9px 10px rgba(255,255,255,0.0), inset 0px 2px 9px rgba(255,255,255,0.0)
+	display inline-block
+	position relative
+	trancicion ()
+	font-weight bold
+	&:after
+		content ''
+		position absolute
+		top 0px
+		width 13px
+		height 100%
+		right 20px
+		background url('../img/plantilla/flecha-azul.svg') center no-repeat
+		background-size 100%
+		trancicion ()
+	&:hover
+		transform scale(1.03,1.03)
+		&:after
+			right 17px
+	&:active
+	&:focus
+		top 3px
+		box-shadow 0 4px 0 amarilloa2, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2)
+
+
+.btn-arrow-mini
+	padding 15px 40px 15px 20px
+	font 18px fuente1
+	font-weight bold
+	&:hover
+		&:after
+			right 17px
+
+
+// ---> [ Desktop ]
+//@media screen and (max-width: 1200px)
+
+// ---> [ Tablet ]
+//@media screen and (max-width: 992px)
+
+// ---> [ Mobil ]
+@media screen and (max-width: 600px)
+	.btn-ico-img
+		padding 10px 20px 10px 20px
+		line-height 30px
+		i
+			display none
+
+	.btn-ico
+		padding 10px 20px 10px 20px
+		line-height 28px !important
+		&:after
+			display none
+
+
+	
+
+// ----------------- [ Header ] --------------- //
+header
+	width 100%
+	height auto
+
+.menu-cont
+	width 100%
+	height auto
+	padding 20px 0px 20px 0px
+	text-align left
+	position fixed
+	z-index 999
+
+.right-menu
+	width auto
+	height auto
+	float right
+
+.lang
+	width auto
+	height auto
+	bloque ()
+	border 1px solid rgba(0,0,0,.0)
+	padding 10px 23px 9px 5px
+	font 18px fuente1
+	font-weight light !important
+	color blancoa
+	margin-right 45px
+	position relative
+	cursor pointer
+	&:after
+		content ''
+		width 15px
+		height 22px
+		position absolute
+		right 0px
+		top 10px
+		background url('../img/plantilla/triangulo_menu.svg') center
+		background-repeat no-repeat
+		background-size 12px
+		margin 0px 0px 0px 3px
+	&:hover
+		.lang-list
+			opacity 1
+
+.lang-list
+	opacity 0
+	trancicion ()
+	border-bottom 1px solid amarilloa
+	border-left 1px solid amarilloa
+	border-right 1px solid amarilloa
+	position absolute
+	bottom calc( -100% - 27px )
+	right 0px
+	li
+		bloque ()
+		width 100%
+		height auto
+		border-top 1px solid amarilloa
+		padding 5px 20px 5px 20px
+		trancicion ()
+		&:hover
+			background amarilloa
+			color azula
+
+#lang_sel_click
+	float left !important
+	margin 0px 35px 0px 0px
+	height auto !important
+	position relative
+	z-index 1 !important
+	padding-right 12px
+	&:before
+		position absolute
+		content ''
+		width 15px
+		height 100%
+		background url("../img/plantilla/triangulo_menu.svg") center no-repeat
+		background-size 13px
+		right 0px
+		top 0px
+	li
+		width auto !important
+		a
+			padding 10px 12px 10px 12px
+			font 18px fuente1
+			color blancoa !important
+			background rgba(13,34,94,.7) !important
+			border 1px solid rgba(0,0,0,.0) !important
+			trancicion () !important
+		ul
+			border 0px solid amarilloa !important
+			width auto !important
+			top 45px !important
+			li
+				border 1px solid amarilloa !important
+				margin-top -1px !important
+				width 100% !important
+				trancicion () !important
+				a
+					font-size 16px !important
+					trancicion () !important
+					&:hover
+						background amarilloa !important
+						color azula !important
+
+#lang_sel_click a.lang_sel_sel {
+    background: none !important;
+}
+.icl_lang_sel_translated{
+	display:none !important;
+}
+.menu
+	width auto
+	height auto
+	bloque ()
+	font 18px fuente1
+	color amarilloa
+	padding 10px 35px 10px 0px
+	margin-left 45px
+	cursor pointer
+	position relative
+	z-index 2
+	trancicion ()
+	
+.menu-ico
+	width 7px
+	height 7px
+	background amarilloa
+	border-radius 50%
+	bloque ()
+	position absolute
+	trancicion ()
+	top 18px
+	right 0px
+	&:after
+	&:before
+		content ''
+		position absolute
+		width 7px
+		height 7px
+		background amarilloa
+		trancicion ()
+		border-radius 50%
+		left 0px
+	&:before
+		top -12px
+	&:after
+		bottom -12px
+
+
+.menu-active
+	color rgba(0,0,0,0.0)
+	trancicion ()
+	.menu-ico
+		width 43px
+		height 43px
+		background rgba(13,34,93,.9)
+		border 2px solid amarilloa
+		border-radius 50%
+		bloque ()
+		position absolute
+		top 0px
+		right 0px
+		margin 0px 0px 0px 25px
+		trancicion ()
+		&:after
+		&:before
+			content ''
+			position absolute
+			width 20px
+			height 2px
+			background amarilloa
+			border-radius 9px
+			top 0px
+			left 24%
+			bottom 0px
+			right auto
+			margin-top auto
+			margin-bottom auto
+			trancicion ()
+		&:before
+			transform rotate(-225deg)
+		&:after
+			transform rotate(225deg)
+		&:hover
+			background amarilloa
+			&:after
+			&:before
+				background azula
+
+.menu-list
+	width 50%
+	height 100%
+	position fixed
+	overflow-x hidden
+	overflow-y scroll
+	top 0px
+	right -20%
+	background rgba(13,34,93,.95)
+	z-index 1
+	padding 40px 0px 0px 5%
+	font-weight 900
+	trancicion ()
+	transform scale(0,1)
+	opacity 0
+	li
+		bloque ()
+		width 100%
+		position relative
+		a
+			font 20px fuente1
+			color amarilloa
+			padding 14px 33px 14px 0px
+			font-weight 900
+			position relative
+			bloque ()
+			trancicion ()
+			&:after
+				content ''
+				position absolute
+				top 0px
+				right 0px
+				width 30px
+				height 100%
+				background url('../img/plantilla/flecha-amarillo-migaja.svg') center
+				background-repeat no-repeat
+				background-size 15px
+				trancicion ()
+			&:hover
+				padding 14px 37px 14px 0px
+		// &:hover
+		// 	.menu-listsub
+		// 		right 0%
+		// 		opacity 1
+		// 		transform scale(1,1)
+		.mli-active2
+			opacity .4
+		.mli-active
+			opacity 1
+			padding 14px 37px 14px 0px
+
+.menu-listsub
+	width 50%
+	height auto
+	position absolute
+	bloque ()
+	left auto
+	top 0px
+	bottom auto
+	right -30%
+	z-index 1
+	transform scale(0.5,1)
+	opacity 0px
+	trancicion ()
+	li
+		bloque ()
+		a
+			bloque ()
+			color blancoa
+			&:after
+				content ''
+				width 0px
+				height 0px
+			&:hover
+				color amarilloa
+
+.menu-listsub-active
+	right 0%
+	opacity 1
+	transform scale(1,1)
+
+
+.menu-list-active
+	right 0%
+	transform scale(1,1)
+	opacity 1
+	box-shadow 0px 0px 10px 5px rgba(0,0,0,.3)
+
+.menu-follow
+	width 90%
+	max-width 400px
+	height auto
+	border-top 1px solid rgba(255,255,255,.4)
+	bloque ()
+	margin 5px 0px 0px 0px
+	padding 15px 10px 5px 2px
+	text-align left
+	h1
+	h2
+	h3
+	h4
+	h5
+	h6
+		font 17px fuente1
+		line-height 22px
+		color blancoa
+
+
+
+.menu-followcont
+	width auto
+	bloque ()
+	padding 15px 5px 0px 0px
+	a
+		width auto
+		height auto
+		bloque ()
+		margin 0px 15px 15px 0px
+
+.menu-fb-img
+	img
+		width 10px !important
+		height auto
+		position absolute
+		top 0px
+		bottom 0px
+		left 0px
+		right 0px
+		margin auto
+.menu-tw-img
+	img
+		width 22px !important
+		height auto
+		position absolute
+		top 0px
+		bottom 0px
+		left 0px
+		right 0px
+		margin auto
+.menu-yt-img
+	img
+		width 22px !important
+		height auto
+		position absolute
+		top 0px 
+		bottom 0px
+		left 0px
+		right 0px
+		margin auto
+
+.btn-menufollow
+	width 40px !important
+	height 35px !important
+	padding 0px
+	background amarilloa !important
+	color azula
+	border-radius 5px
+	box-shadow 0 0px 0px amarilloa2, 0 5px 0 amarilloa2, 0px 9px 10px rgba(255,255,255,0.0), inset 0px 2px 9px rgba(255,255,255,0.0)
+	display inline-block
+	position relative
+	trancicion ()
+	bloque ()
+	img
+		width 22px
+		height auto
+		vertical-align middle
+		line-height 35px
+		bloque ()
+	&:hover
+		transform scale(1.03,1.03)
+	&:active
+	&:focus
+		top 1px
+		box-shadow 0 4px 0 amarilloa2, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2)
+
+.menu-span
+	width 100%
+	height 83px
+	background azula
+	display inline-block
+
+
+//---------------> [ Desktop ]
+//@media screen and (max-width: 1150px)
+
+//---------------> [ Tablet ]
+@media screen and (max-width: 992px)
+	.menu-cont
+		background azula
+	.menu-list
+		width 100%
+		text-align center
+		ul
+			width auto
+			height auto
+			bloque ()
+			text-align left
+			li
+				display block
+				width auto
+				padding-left 40px
+				a
+					text-align left 
+	.menu-follow
+		text-align left
+		width 100%
+		padding-left 40px
+	.btn-header
+		display none
+	.lang
+		display none
+	.menu-listsub
+		right 0px
+		display block !important
+		transform scale(1,0.0)
+	.menu-listsub-active
+		position relative
+		transform scale(1,1)
+		li
+			padding-left 5px !important
+
+
+@media screen and (max-width: 750px)
+	#lang_sel_click
+		display none !important
+		
+//---------------> [ Movil ]
+@media screen and (max-width: 600px)
+	.menu
+		height 45px
+		font-size 0px
+		top -8px
+		&:before
+			content 'Menú'
+			font 18px fuente2
+			color amarilloa2
+			position absolute
+			top 0px
+			left -35px
+			height 100%
+			width auto
+			line-height 40px
+			font-weight bold
+			trancicion ()
+	.menu-active
+		&:before
+			font-size 0px
+
+	.menu-cont
+		padding 20px 0px 4px 0px
+		.logo
+			width 90px
+			
+	.menu-span
+		width 100%
+		height 69px
+		background azula
+
+// ----------------- [ Secciones ] --------------- //
+.secCont
+	padding 50px 0px 50px 0px
+
+.secCont2
+	padding 25px 0px 50px 0px
+
+.margTop75
+	margin-top 83px
+
+// ---> [ Desktop ]
+//@media screen and (max-width: 1200px)
+
+// ---> [ Tablet ]
+//@media screen and (max-width: 992px)
+
+// ---> [ Mobil ]
+@media screen and (max-width: 600px)
+	.secCont
+		padding 30px 0px 30px 0px
+
+
+
+// ----------------- [ Slider ] --------------- //
+
+.slider-cont
+	width 100%
+	height 570px
+	position relative
+	background negroa
+	z-index 1
+
+.slider-item
+	width 100%
+	height 570px
+	bloque ()
+	img
+		width 100%
+		height auto
+
+
+.slider-cont
+	.owl-controls
+		position absolute
+		right 5%
+		bottom 40px
+		.owl-prev
+			width 55px
+			height 55px
+			background blancoa
+			border-radius 50% !important
+			box-shadow 0px 0px 0px 10px rgba(245,162,18,.0)
+			transition all 400ms ease-out 40ms
+			margin-right 9px !important
+			position relative
+			&:before
+				content ''
+				position absolute
+				width 100%
+				height 100%
+				top 0px
+				left 0px
+				background url('../img/plantilla/flecha-azul.svg') center
+				background-size  12px
+				background-repeat no-repeat
+				transform rotate(180deg)
+			&:hover
+				background amarilloa !important
+				box-shadow 0px 0px 0px 0px rgba(245,162,18,1)
+				&:before
+					content ''
+					background url('../img/plantilla/flecha-amarillo-migaja2.svg') center
+					background-size  12px
+					background-repeat no-repeat
+		.owl-next
+			width 55px
+			height 55px
+			background blancoa
+			border-radius 50% !important
+			box-shadow 0px 0px 0px 10px rgba(245,162,18,.0)
+			transition all 400ms ease-out 40ms
+			margin-right 10px !important
+			position relative
+			&:before
+				content ''
+				position absolute
+				width 100%
+				height 100%
+				top 0px
+				left 0px
+				background url('../img/plantilla/flecha-azul.svg') center
+				background-size  12px
+				background-repeat no-repeat
+			&:hover
+				background amarilloa !important
+				box-shadow 0px 0px 0px 0px rgba(245,162,18,1)
+				&:before
+					content ''
+					background url('../img/plantilla/flecha-amarillo-migaja2.svg') center
+					background-size  12px
+					background-repeat no-repeat
+
+.slider-cap
+	position absolute
+	top 160px
+	left 0px
+	right 0px
+	margin-right auto
+	margin-left auto
+	width 80%
+	height auto
+	min-height 250px
+	z-index 1
+
+// ---> [ Desktop ]
+//@media screen and (max-width: 1200px)
+
+// ---> [ Tablet ]
+//@media screen and (max-width: 992px)
+
+// ---> [ Mobil ]
+@media screen and (max-width: 600px)
+	.slider-cap
+		position absolute
+		top 110px
+		
+	.slider-cont
+		width 100%
+		height 480px
+
+	.slider-item
+		width 100%
+		height 480px
+
+
+
+// ----------------- [ NewSletter ] --------------- //
+.newsletter
+	width 100%
+	height auto
+	bloque ()
+	background url('../img/plantilla/textura2.png') fixed
+	position relative
+	z-index 1
+	box-shadow 0px 0px 20px 0px rgba(13,34,93,.5)
+
+.ns-item
+	tam ()
+	text-align left
+	h1
+	h2
+	h3
+	h4
+	h5
+	h6
+		color blancoa
+		text-align left
+		position relative
+		margin 15px 0px 0px 0px
+		&:before
+			content ''
+			position absolute
+			bottom -26px
+			left 0px
+			width 100%
+			height 8px
+
+.ns-img
+	tam ()
+	text-align center
+	padding 0px 15px 0px 0px
+	img
+		width 100%
+		max-width 120px
+		height auto
+		bloque ()
+
+.ns-form
+	tam ()
+	max-width 530px
+	border-radius 7px
+	overflow hidden
+	font-size 0px
+	box-shadow 0px 14px 10px -1px rgba(0,0,0,0.4)
+	margin 40px 0px 0px 0px
+	.cerror
+		background blancoa
+.nsinput-txt
+	width calc( 100% - 180px )
+	height 70px
+	bloque ()
+	border 0px solid azula
+	border-top 8px solid rgba(74,96,155,.3) 
+	font 18px fuente1
+	line-height 70px
+	border-bottom 8px solid rgba(74,96,155,.0) 
+	font-weight bold
+	padding 0px 10px 0px 20px
+	trancicion ()
+		
+
+.nsinput-txt::-webkit-input-placeholder
+	color azula
+.nsinput-txt:-moz-placeholder
+	color azula
+.nsinput-txt::-moz-placeholder
+	color azula
+.nsinput-txt:-ms-input-placeholder
+	color azula
+		
+.nsbtn
+	width 180px
+	height 70px
+	font 20px fuente1
+	color azula
+	line-height 70px
+	text-align center
+	background amarilloa
+	border 0px solid azula
+	font-weight bold
+	border-bottom 8px solid amarilloa2
+	trancicion ()
+	&:hover
+		border-bottom 4px solid amarilloa2
+	&:active
+	&:focus
+		background amarilloa
+		box-shadow 0 4px 0 amarilloa2, 0px 4px 4px rgba(0,0,0,0.5), inset 0px 2px 5px rgba(0,0,0,0.4)
+
+// ---> [ Desktop ]
+//@media screen and (max-width: 1200px)
+
+// ---> [ Tablet ]
+@media screen and (max-width: 992px)
+	.ns-item
+		tam ()
+		text-align left
+		h1
+		h2
+		h3
+		h4
+		h5
+		h6
+			color blancoa
+			text-align center
+			position relative
+			margin 15px 0px 0px 0px
+			&:before
+				content ''
+				position absolute
+				bottom -26px
+				left 0px
+				width 100%
+				height 8px
+	.ns-img
+		display none
+
+// ---> [ Mobil ]
+@media screen and (max-width: 600px)
+	.ns-item
+		h1
+		h2
+		h3
+		h4
+		h5
+		h6
+			font-size 22px
+
+	.nsinput-txt
+		width 100%
+		text-align center
+
+	.nsbtn
+		width 100%
+		height 70px
+
+// ----------------- [ Follow ] --------------- //
+.follow-cont
+	tam ()
+	background blancoa
+	padding 30px 0px 30px 0px
+	h1
+	h2
+	h3
+	h4
+	h5
+	h6
+		font 25px fuente1
+
+.follow
+	width auto
+	bloque ()
+	padding 30px 0px 0px 0px
+	li
+		width auto
+		height auto
+		bloque ()
+		margin 0px 15px 15px 15px
+
+.fb-img
+	img
+		width 15px
+		height auto
+		position absolute
+		top 0px
+		bottom 0px
+		left 0px
+		right 0px
+		margin auto
+.tw-img
+	img
+		width 35px
+		height auto
+		position absolute
+		top 0px
+		bottom 0px
+		left 0px
+		right 0px
+		margin auto
+.yt-img
+	img
+		width 35px
+		height auto
+		position absolute
+		top 0px
+		bottom 0px
+		left 0px
+		right 0px
+		margin auto
+
+
+
+
+// ----------------- [ CopyRight ] --------------- //
+footer
+	width 100%
+	height auto
+	
+.copy-cont
+	tam ()
+	padding 15px 0px 15px 0px
+	font-size 0px
+	
+.copy-item
+	width auto
+	height auto
+	font 14px fuente1
+	line-height 27px
+	color azula
+	bloque ()
+	a
+		font 14px fuente1
+		line-height 27px
+		color azula
+		font-weight normal
+		trancicion ()
+		margin 0px 5px 0px 5px
+		&:first-child
+			margin 0px -5px 0px 0px
+		&:hover
+			text-shadow 0.25px 0.25px 0px azula,-0.25px -0.25px 0px azula,0.25px -0.25px 0px azula,-0.25px 0.25px 0px azula
+		img
+			width 26px
+			height 26px
+			display inline-block
+			vertical-align middle
+			trancicion ()
+			&:hover
+				transform scale(1.1,1.1)
+
+.copy-help
+	min-width 280px
+
+.copy-right
+	float right
+	
+//------------------------- [ FIN - ESTILOS ] ---------------------------/
+//________________________________________________________________________/
+//_________________________________________________________________________/
